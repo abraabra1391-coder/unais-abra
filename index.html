@@ -4,24 +4,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-<title>Abra &amp; Mohammad Unais — Wedding Invitation</title>
+<title>Unais &amp; Abra — Wedding Invitation</title>
 
 <!-- ===== SHARING METADATA =====
      After deploying, replace SITE_URL_HERE (4 places below) with your live domain,
      e.g. yourdomain.example.com  (no https://, no trailing slash). -->
 <link rel="canonical" href="./">
-<meta name="description" content="You are invited to celebrate the wedding of Abra &amp; Mohammad Unais · 5 December 2026 · 11:00 AM – 3:00 PM">
-<meta property="og:title" content="Abra &amp; Mohammad Unais">
-<meta property="og:description" content="You are invited to celebrate the wedding of Abra &amp; Mohammad Unais · 5 December 2026 · 11:00 AM – 3:00 PM">
+<meta name="description" content="You are invited to celebrate the wedding of Unais &amp; Abra · 5 December 2026 · 11:00 AM – 3:00 PM">
+<meta property="og:title" content="Unais &amp; Abra">
+<meta property="og:description" content="You are invited to celebrate the wedding of Unais &amp; Abra · 5 December 2026 · 11:00 AM – 3:00 PM">
 <meta property="og:image" content="assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Wedding invitation of Abra &amp; Mohammad Unais, 5 December 2026">
+<meta property="og:image:alt" content="Wedding invitation of Unais &amp; Abra, 5 December 2026">
 <meta property="og:type" content="website">
 <meta property="og:url" content="./">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abra &amp; Mohammad Unais">
-<meta name="twitter:description" content="You are invited to celebrate the wedding of Abra &amp; Mohammad Unais · 5 December 2026 · 11:00 AM – 3:00 PM">
+<meta name="twitter:title" content="Unais &amp; Abra">
+<meta name="twitter:description" content="You are invited to celebrate the wedding of Unais &amp; Abra · 5 December 2026 · 11:00 AM – 3:00 PM">
 <meta name="twitter:image" content="assets/og-image.jpg">
 <meta name="theme-color" content="#3d0c15">
 
@@ -183,14 +183,13 @@
     font-family:var(--script); font-weight:700; font-size:70px; line-height:1.05; letter-spacing:1px;
   }
 
-  /* ---------- VIDEO & DOOR CANVAS ---------- */
+  /* ---------- VIDEO ---------- */
   #videoStage{
     position:fixed; inset:0; z-index:50; max-width:480px; margin:0 auto;
-    background:#100603; display:none;
+    background:#100603; display:none; opacity:1; transition:opacity 0.4s ease;
   }
   @media (min-width:701px){ #videoStage{ top:28px; bottom:28px; height:auto; border-radius:6px; overflow:hidden; } }
-  #doorCanvas{ width:100%; height:100%; object-fit:cover; display:block; cursor:pointer; }
-  #doorVideo{ display:none; }
+  #doorVideo{ width:100%; height:100%; object-fit:cover; display:block; cursor:pointer; }
 
   /* ---------- SECTION shared ---------- */
   .page{
@@ -425,8 +424,8 @@
     top:53%;
     left:50%;
     transform:translate(-50%, -50%);
-    width:84%;
-    max-width:330px;
+    width:86%;
+    max-width:320px;
     z-index:4;
     text-align:center;
     display:flex;
@@ -438,18 +437,18 @@
   }
   .hero-sub{
     font-family:var(--body);
-    font-size:12px;
+    font-size:11px;
     letter-spacing:3.5px;
     text-transform:uppercase;
-    color:var(--ink-soft);
-    margin:0 0 8px;
+    color:#7a6652;
+    margin:0 0 4px;
     font-weight:600;
   }
   .hero-name{
     font-family:var(--serif);
     font-style:italic;
     font-weight:600;
-    font-size:48px;
+    font-size:42px;
     color:var(--burgundy);
     margin:0;
     line-height:1.05;
@@ -458,81 +457,58 @@
   .hero-amp{
     font-family:var(--serif);
     font-style:italic;
-    font-size:30px;
+    font-size:24px;
     color:var(--gold);
-    margin:2px 0;
+    margin:1px 0;
     line-height:1;
   }
   .hero-divider{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:10px;
-    width:150px;
-    margin:10px auto;
-  }
-  .hero-divider::before, .hero-divider::after{
-    content:'';
-    flex:1;
-    height:1px;
-    background:linear-gradient(90deg, transparent, var(--gold), transparent);
-  }
-  .hero-divider i{
-    width:5px;
-    height:5px;
-    border:1px solid var(--gold);
-    transform:rotate(45deg);
-    display:block;
-    flex:none;
+    margin:6px auto;
   }
   .hero-date-num{
     font-family:var(--serif);
     font-weight:500;
-    font-size:48px;
+    font-size:40px;
     line-height:1;
     color:var(--burgundy);
-    margin:2px 0 2px;
+    margin:0;
     text-shadow: 0 1px 2px rgba(255,255,255,.5);
   }
   .hero-date-month{
     font-family:var(--body);
-    font-size:13.5px;
-    letter-spacing:4px;
+    font-size:12px;
+    letter-spacing:3.5px;
     text-transform:uppercase;
-    color:var(--ink-soft);
+    color:#7a6652;
     font-weight:600;
+    margin:3px 0 1px;
   }
   .hero-date-time{
     font-family:var(--body);
     font-style:italic;
-    font-size:13.5px;
-    color:var(--ink-soft);
-    margin-top:4px;
+    font-size:11.5px;
+    color:#7a6652;
+    margin:0;
   }
   .hero-venue{
     font-family:var(--body);
-    font-size:13.5px;
-    letter-spacing:2px;
+    font-size:12.5px;
+    letter-spacing:2.2px;
     text-transform:uppercase;
     color:var(--burgundy);
-    font-weight:600;
-    line-height:1.3;
-    margin-top:2px;
+    font-weight:700;
+    line-height:1.25;
+    margin-top:0;
   }
   .hero-location{
     font-family:var(--body);
-    font-size:13.5px;
-    color:var(--ink-soft);
+    font-size:11.5px;
+    color:#7a6652;
     margin-top:2px;
     font-weight:500;
-  }
-  .hero-quote{
-    font-family:var(--serif);
-    font-style:italic;
-    font-size:14.5px;
-    color:var(--ink-soft);
-    margin:4px 0 0;
-    letter-spacing:0.5px;
   }
 
   /* couple photo (Page 9) — shown only when COUPLE_IMAGE is set in the script */
@@ -674,9 +650,9 @@
     <div class="veil"></div>
     <div class="ar-welcome">السلام عليكم ورحمة الله وبركاته</div>
     <div class="ar-names"><br><br><br>
-      <p class="ar-name">أبرا</p>
+      <p class="ar-name">أُنيس</p>
       <div class="ar-divider"><i></i></div>
-      <p class="ar-name">محمد أُنيس</p>
+      <p class="ar-name">أبرا</p>
     </div>
     <div class="open-cta-wrap">
       <button class="open-cta" id="openBtn" type="button">Open Invitation</button>
@@ -685,8 +661,7 @@
 
   <!-- VIDEO STAGE (shown while opening.mp4 plays) -->
   <section id="videoStage" aria-label="Door opening animation">
-    <canvas id="doorCanvas"></canvas>
-    <video id="doorVideo" src="assets/opening.mp4" poster="assets/poster.jpg" playsinline preload="auto" muted></video>
+    <video id="doorVideo" src="assets/opening.mp4" poster="assets/poster.jpg" playsinline preload="auto"></video>
   </section>
 
   <!-- MAIN STORY -->
@@ -694,22 +669,7 @@
 
     <!-- HERO -->
     <section id="hero" class="page">
-      <img class="hero-img" src="assets/hero.png?v=5" alt="Wedding invitation of Abra and Mohammad Unais, 5 December 2026 — Live Convention Center, Kozhichana">
-      <div class="hero-overlay">
-        <p class="hero-sub">TO THE WEDDING OF</p>
-        <h1 class="hero-name">Abra</h1>
-        <div class="hero-amp">&amp;</div>
-        <h1 class="hero-name">Mohammad Unais</h1>
-        <div class="hero-divider"><i></i></div>
-        <div class="hero-date-num">5</div>
-        <div class="hero-date-month">DECEMBER 2026</div>
-        <div class="hero-date-time">11:00 AM – 3:00 PM</div>
-        <div class="hero-divider"><i></i></div>
-        <div class="hero-venue">LIVE CONVENTION CENTER</div>
-        <div class="hero-location">Kozhichana</div>
-        <div class="hero-divider"><i></i></div>
-        <p class="hero-quote">Together in faith, towards forever.</p>
-      </div>
+      <img class="hero-img" src="assets/hero.png?v=9" alt="Wedding invitation of Unais and Abra, 5 December 2026">
       <div class="hero-butterfly hero-butterfly-1"><img src="assets/butterfly.png" alt=""></div>
       <div class="hero-butterfly hero-butterfly-2"><img src="assets/butterfly.png" alt=""></div>
       <div class="scroll-cue">
@@ -746,14 +706,48 @@
         <p class="eyebrow-ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
         <div class="divider"><i></i></div>
         <h2 class="name" style="font-size:30px;">Together With Their Families</h2>
-        <p class="body-copy type-text">With the blessings of Allah and their families, Abra &amp; Mohammad Unais joyfully invite you to celebrate the beginning of their new journey together.</p>
+        <p class="body-copy type-text">With the blessings of Allah and their families, Unais &amp; Abra joyfully invite you to celebrate the beginning of their new journey together.</p>
         <div class="divider"><i></i></div>
         <p class="verse">&ldquo;And among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them, and He placed between you affection and mercy.&rdquo;</p>
         <p class="verse-ref">Quran 30:21</p>
       </div>
     </section>
 
-    <!-- PAGE 02 — BRIDE -->
+    <!-- PAGE 02 — GROOM -->
+    <section class="page">
+      <div class="page-bg" style="background-image:url('assets/background.png'); filter:saturate(1) brightness(1.02) hue-rotate(-6deg); transform:scaleX(-1);"></div>
+      <svg class="floral left" style="top:30%;" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 210 C 10 160 22 140 16 100 C 11 70 20 50 15 20" stroke="currentColor" stroke-width="1.4" opacity=".8"/>
+        <ellipse cx="30" cy="150" rx="16" ry="7" transform="rotate(-25 30 150)" fill="currentColor" opacity=".32"/>
+        <ellipse cx="6" cy="120" rx="14" ry="6" transform="rotate(20 6 120)" fill="currentColor" opacity=".28"/>
+        <ellipse cx="28" cy="85" rx="14" ry="6" transform="rotate(-20 28 85)" fill="currentColor" opacity=".28"/>
+        <g transform="translate(15,20)">
+          <circle r="5" fill="currentColor" opacity=".6"/><circle cx="-8" cy="-3" r="5" fill="currentColor" opacity=".45"/>
+          <circle cx="8" cy="-3" r="5" fill="currentColor" opacity=".45"/><circle cx="-6" cy="7" r="5" fill="currentColor" opacity=".45"/>
+          <circle cx="6" cy="7" r="5" fill="currentColor" opacity=".45"/>
+        </g>
+      </svg>
+      <svg class="floral right" style="bottom:26%;" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 210 C 10 160 22 140 16 100 C 11 70 20 50 15 20" stroke="currentColor" stroke-width="1.4" opacity=".8"/>
+        <ellipse cx="30" cy="150" rx="16" ry="7" transform="rotate(-25 30 150)" fill="currentColor" opacity=".32"/>
+        <ellipse cx="6" cy="120" rx="14" ry="6" transform="rotate(20 6 120)" fill="currentColor" opacity=".28"/>
+        <ellipse cx="28" cy="85" rx="14" ry="6" transform="rotate(-20 28 85)" fill="currentColor" opacity=".28"/>
+        <g transform="translate(15,20)">
+          <circle r="5" fill="currentColor" opacity=".6"/><circle cx="-8" cy="-3" r="5" fill="currentColor" opacity=".45"/>
+          <circle cx="8" cy="-3" r="5" fill="currentColor" opacity=".45"/><circle cx="-6" cy="7" r="5" fill="currentColor" opacity=".45"/>
+          <circle cx="6" cy="7" r="5" fill="currentColor" opacity=".45"/>
+        </g>
+      </svg>
+      <div class="text-veil reveal">
+        <p class="label">The Groom</p>
+        <h2 class="name letters">Unais</h2>
+        <div class="divider"><i></i></div>
+        <p class="sub" style="margin-bottom:4px;">Son of</p>
+        <p class="fam-parents" style="margin:0;">Ibraheen &amp; Jameela</p>
+      </div>
+    </section>
+
+    <!-- PAGE 03 — BRIDE -->
     <section class="page">
       <div class="page-bg" style="background-image:url('assets/background.png'); filter:saturate(1) brightness(1.02);"></div>
       <svg class="floral right" style="top:30%;" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -787,40 +781,6 @@
       </div>
     </section>
 
-    <!-- PAGE 03 — GROOM -->
-    <section class="page">
-      <div class="page-bg" style="background-image:url('assets/background.png'); filter:saturate(1) brightness(1.02) hue-rotate(-6deg); transform:scaleX(-1);"></div>
-      <svg class="floral left" style="top:30%;" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 210 C 10 160 22 140 16 100 C 11 70 20 50 15 20" stroke="currentColor" stroke-width="1.4" opacity=".8"/>
-        <ellipse cx="30" cy="150" rx="16" ry="7" transform="rotate(-25 30 150)" fill="currentColor" opacity=".32"/>
-        <ellipse cx="6" cy="120" rx="14" ry="6" transform="rotate(20 6 120)" fill="currentColor" opacity=".28"/>
-        <ellipse cx="28" cy="85" rx="14" ry="6" transform="rotate(-20 28 85)" fill="currentColor" opacity=".28"/>
-        <g transform="translate(15,20)">
-          <circle r="5" fill="currentColor" opacity=".6"/><circle cx="-8" cy="-3" r="5" fill="currentColor" opacity=".45"/>
-          <circle cx="8" cy="-3" r="5" fill="currentColor" opacity=".45"/><circle cx="-6" cy="7" r="5" fill="currentColor" opacity=".45"/>
-          <circle cx="6" cy="7" r="5" fill="currentColor" opacity=".45"/>
-        </g>
-      </svg>
-      <svg class="floral right" style="bottom:26%;" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 210 C 10 160 22 140 16 100 C 11 70 20 50 15 20" stroke="currentColor" stroke-width="1.4" opacity=".8"/>
-        <ellipse cx="30" cy="150" rx="16" ry="7" transform="rotate(-25 30 150)" fill="currentColor" opacity=".32"/>
-        <ellipse cx="6" cy="120" rx="14" ry="6" transform="rotate(20 6 120)" fill="currentColor" opacity=".28"/>
-        <ellipse cx="28" cy="85" rx="14" ry="6" transform="rotate(-20 28 85)" fill="currentColor" opacity=".28"/>
-        <g transform="translate(15,20)">
-          <circle r="5" fill="currentColor" opacity=".6"/><circle cx="-8" cy="-3" r="5" fill="currentColor" opacity=".45"/>
-          <circle cx="8" cy="-3" r="5" fill="currentColor" opacity=".45"/><circle cx="-6" cy="7" r="5" fill="currentColor" opacity=".45"/>
-          <circle cx="6" cy="7" r="5" fill="currentColor" opacity=".45"/>
-        </g>
-      </svg>
-      <div class="text-veil reveal">
-        <p class="label">The Groom</p>
-        <h2 class="name letters">Mohammad Unais</h2>
-        <div class="divider"><i></i></div>
-        <p class="sub" style="margin-bottom:4px;">Son of</p>
-        <p class="fam-parents" style="margin:0;">Ibraheen &amp; Jameela</p>
-      </div>
-    </section>
-
     <!-- PAGE 04 — DATE -->
     <section class="page" style="background:linear-gradient(180deg, var(--cream-dim), var(--cream));">
       <div class="reveal">
@@ -833,16 +793,29 @@
       </div>
     </section>
 
-    <!-- PAGE 05 — VENUE -->
+    <!-- PAGE 05 — GROOM VENUE -->
     <section class="page">
       <div class="page-bg" style="background-image:url('assets/background.png'); filter:saturate(.85) brightness(.4);"></div>
       <div class="page-bg" style="background:linear-gradient(180deg, rgba(61,12,21,.55), rgba(36,18,9,.78));"></div>
       <div class="reveal">
-        <p class="label on-dark">The Celebration</p>
-        <h2 class="name on-dark" style="font-size:44px;">Live<br>Convention Center</h2>
+        <p class="label on-dark">Groom's Venue</p>
+        <h2 class="name on-dark" style="font-size:44px;">Alwan<br>Auditorium</h2>
         <div class="divider dark"><i></i></div>
-        <p class="body-copy on-dark">Kozhichana<br>5 December 2026<br>11:00 AM – 3:00 PM</p>
-        <a class="btn-gold" id="mapBtn" href="https://www.google.com/maps/search/?api=1&amp;query=Live+Convention+Center+Kozhichana" target="_blank" rel="noopener">View Location</a>
+        <p class="body-copy on-dark">Karinkappara<br>5 December 2026<br>11:00 AM – 3:00 PM</p>
+        <a class="btn-gold" id="mapBtn" href="https://maps.app.goo.gl/LUw5epMoPZ5ui25H8" target="_blank" rel="noopener">View Location</a>
+      </div>
+    </section>
+
+    <!-- PAGE 05B — BRIDE VENUE -->
+    <section class="page">
+      <div class="page-bg" style="background-image:url('assets/background.png'); filter:saturate(.85) brightness(.4); transform:scaleX(-1);"></div>
+      <div class="page-bg" style="background:linear-gradient(180deg, rgba(61,12,21,.55), rgba(36,18,9,.78));"></div>
+      <div class="reveal">
+        <p class="label on-dark">Bride's Venue</p>
+        <h2 class="name on-dark" style="font-size:44px;">Live<br>Auditorium</h2>
+        <div class="divider dark"><i></i></div>
+        <p class="body-copy on-dark">Kozhichana, Pookiparamba<br>5 December 2026<br>11:00 AM – 3:00 PM</p>
+        <a class="btn-gold" id="mapBtn2" href="https://maps.app.goo.gl/B7KNdRWPk3R4scqDA" target="_blank" rel="noopener">View Location</a>
       </div>
     </section>
 
@@ -876,65 +849,18 @@
       </div>
     </section>
 
-    <!-- PAGE 08 — BALLOON POP -->
-    <section class="page" style="background:linear-gradient(180deg, var(--cream), var(--cream-dim)); padding-top:70px;">
-      <p class="label">Celebrate With Us</p>
-      <div class="divider"><i></i></div>
-      <!-- Couple photo: set COUPLE_IMAGE in the script below (e.g. 'assets/couple.png') to show it here -->
-      <figure class="couple-frame" id="coupleFrame" hidden><img id="coupleImg" alt="Abra and Mohammad Unais" decoding="async"></figure>
-      <div id="balloonField"></div>
-    </section>
 
-    <!-- PAGE 10 — COMPLIMENTS -->
-    <section class="page" style="background:linear-gradient(180deg, var(--wood), #1b0f07);">
-      <div class="reveal">
-        <p class="label on-dark">With Compliments</p>
-        <div class="divider dark"><i></i></div>
-        <div class="flip-wrap" id="complimentsFlip">
-          <div class="flip-card" id="complimentsCard">
-            <div class="flip-face flip-front">
-              <p class="body-copy on-dark" style="font-size:15px; letter-spacing:1px; text-transform:uppercase;">Tap to Reveal</p>
-              <div class="divider dark" style="margin-top:14px;"><i></i></div>
-            </div>
-            <!-- To list specific names later, replace the text in this back face -->
-            <div class="flip-face flip-back">
-              <p class="body-copy on-dark" style="font-size:20px; font-family:var(--serif); font-style:italic; line-height:2;">With Love<br>From Our Families</p>
-            </div>
-          </div>
-        </div>
-        <p class="scratch-hint">Tap the card</p>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="page" style="background:linear-gradient(180deg, var(--burgundy), var(--burgundy-deep));">
-      <div class="reveal">
-        <!-- <p class="label on-dark">Need Assistance?</p> -->
-        <h2 class="name on-dark" style="font-size:38px; display:flex; align-items:center; justify-content:center; gap:12px;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="#25D366" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Contact Us
-        </h2>
-        <div class="divider dark"><i></i></div>
-        <p class="body-copy on-dark" style="margin-bottom:28px;">For any emergency, please reach out</p>
-        <a class="btn-gold" href="tel:+918593902562" style="display:block; margin:12px auto; max-width:240px;">📞 +91 85939 02562</a>
-        <a class="btn-gold" href="tel:+919747504943" style="display:block; margin:12px auto; max-width:240px;">📞 +91 97475 04943</a>
-        <div style="margin-top:32px; display:flex; gap:16px; justify-content:center;">
-          <a href="https://wa.me/918593902562" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; font-family:var(--body); font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#fff; text-decoration:none; background:#25D366; border:none; padding:14px 26px; border-radius:2px; box-shadow:0 6px 18px rgba(0,0,0,.3); font-weight:600;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
+
 
     <!-- FINAL CLOSING -->
     <section id="closing" class="page">
       <div class="reveal">
         <p class="closing-dua">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
         <div class="divider dark"><i></i></div>
-        <h2 class="name" style="font-size:52px;">Abra</h2>
+        <h2 class="name" style="font-size:52px;">Unais</h2>
         <p class="sub" style="font-size:22px; margin:2px 0;">&amp;</p>
-        <h2 class="name" style="font-size:52px;">Mohammad Unais</h2>
+        <h2 class="name" style="font-size:52px;">Abra</h2>
         <div class="divider dark"><i></i></div>
         <p class="sub" style="margin-bottom:4px;">5 December 2026</p>
         <p class="sub">11:00 AM – 3:00 PM</p>
@@ -944,24 +870,28 @@
 
   </main>
 
-  <!-- Creator Credit -->
-  <div style="text-align:center; padding:20px 20px 30px; background:var(--wood); position:relative; z-index:5;">
-    <p style="font-family:var(--body); font-size:10.5px; letter-spacing:2px; text-transform:uppercase; color:var(--cream-dim); margin:0 0 6px; opacity:.7;">Want a custom wedding invitation?</p>
-    <!-- <a href="tel:+917560943996" style="font-family:var(--body); font-size:13px; letter-spacing:1px; color:var(--gold); text-decoration:none; transition:color 0.3s;">Contact: +91 75609 43996</a> -->
-    <div style="margin-top:12px;">
-      <a href="https://wa.me/917560943996" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:7px; font-family:var(--body); font-size:13px; letter-spacing:1px; color:#25D366; text-decoration:none; background:rgba(37,211,102,0.12); border:1px solid rgba(37,211,102,0.35); padding:9px 20px; border-radius:25px; transition:background 0.3s;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp: +91 75609 43996
-      </a>
+  <!-- Heartfelt Thoughts -->
+  <div style="text-align:center; padding:32px 24px 44px; background:var(--wood); position:relative; z-index:5; border-top:1px solid rgba(198,161,91,0.22);">
+    <p style="font-family:var(--body); font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); margin:0 0 10px; opacity:.9;">Heartfelt Thoughts</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:9px; width:100px; margin:0 auto 16px;">
+      <span style="flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold-light), transparent);"></span>
+      <i style="width:5px; height:5px; border:1px solid var(--gold-light); transform:rotate(45deg); display:block; flex:none;"></i>
+      <span style="flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold-light), transparent);"></span>
     </div>
+    <p style="font-family:var(--serif); font-style:italic; font-size:18px; line-height:1.6; color:var(--cream); max-width:380px; margin:0 auto 14px; text-shadow:0 1px 4px rgba(0,0,0,.4);">
+      &ldquo;Your presence and prayers will make our celebration truly special as we step together into this new chapter of love and faith.&rdquo;
+    </p>
+    <p style="font-family:var(--body); font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--gold-dim); margin:0;">
+      — With Love &amp; Prayers —
+    </p>
   </div>
 
 </div>
 <script>
-/* =====================  EDIT THESE AFTER DEPLOYING  ===================== */
-// Paste the Google Maps share link for Live Convention Center Kozhichana here (e.g. 'https://maps.app.goo.gl/xxxx').
-// While empty, the "View Location" button opens a Google Maps search for the venue instead.
-const NEW_GOOGLE_MAPS_URL_HERE = '';
+// Google Maps share link for Groom's Venue: Alwan Auditorium, Karinkappara
+const NEW_GOOGLE_MAPS_URL_HERE = 'https://maps.app.goo.gl/LUw5epMoPZ5ui25H8';
+// Google Maps share link for Bride's Venue: Live Auditorium, Kozhichana, Pookiparamba
+const NEW_GOOGLE_MAPS_URL_HERE_2 = 'https://maps.app.goo.gl/B7KNdRWPk3R4scqDA';
 // Couple photo for the "Celebrate With Us" page, e.g. 'assets/couple.png'. Leave '' to hide the frame.
 const COUPLE_IMAGE = '';
 // Countdown target: 5 December 2026, 11:00 AM India Standard Time (Asia/Kolkata, UTC+05:30)
@@ -1004,121 +934,8 @@ const WEDDING_START = '2026-12-05T11:00:00+05:30';
     muteBtn.style.opacity = bgSong.muted ? '.55' : '1';
   });
 
-  const doorCanvas = document.getElementById('doorCanvas');
-  const doorCtx = doorCanvas ? doorCanvas.getContext('2d', { willReadFrequently: true }) : null;
-
-  // Pre-render the Abra & Mohammad Unais card for the opening door
-  const heroCardImg = new Image();
-  heroCardImg.src = 'assets/hero.png?v=5';
-  let heroPrepared = false;
-  let heroData = null;
-  let heroW = 0, heroH = 0;
-
-  function prepareHeroCanvas(w, h){
-    if(heroPrepared && heroW === w && heroH === h) return;
-    heroW = w; heroH = h;
-    const hc = document.createElement('canvas');
-    hc.width = w; hc.height = h;
-    const hctx = hc.getContext('2d');
-    hctx.drawImage(heroCardImg, 0, 0, w, h);
-
-    const cx = w / 2;
-    const scale = w / 941;
-
-    hctx.textAlign = 'center';
-    hctx.textBaseline = 'middle';
-
-    // Subtitle
-    hctx.font = `600 ${Math.round(22 * scale)}px Montserrat, sans-serif`;
-    hctx.fillStyle = '#6b5847';
-    hctx.fillText('TO THE WEDDING OF', cx, h * 0.355);
-
-    // Abra
-    hctx.font = `italic 600 ${Math.round(86 * scale)}px 'Cormorant Garamond', serif`;
-    hctx.fillStyle = '#5c1020';
-    hctx.shadowColor = 'rgba(255,255,255,0.6)';
-    hctx.shadowBlur = 4;
-    hctx.fillText('Abra', cx, h * 0.405);
-
-    // &
-    hctx.font = `italic 500 ${Math.round(54 * scale)}px 'Cormorant Garamond', serif`;
-    hctx.fillStyle = '#c6a15b';
-    hctx.shadowBlur = 0;
-    hctx.fillText('&', cx, h * 0.445);
-
-    // Mohammad Unais
-    hctx.font = `italic 600 ${Math.round(84 * scale)}px 'Cormorant Garamond', serif`;
-    hctx.fillStyle = '#5c1020';
-    hctx.shadowColor = 'rgba(255,255,255,0.6)';
-    hctx.shadowBlur = 4;
-    hctx.fillText('Mohammad Unais', cx, h * 0.490);
-
-    // Divider
-    drawDoorDivider(hctx, cx, h * 0.535, 180 * scale);
-
-    // 5
-    hctx.font = `600 ${Math.round(92 * scale)}px 'Cormorant Garamond', serif`;
-    hctx.fillStyle = '#5c1020';
-    hctx.shadowBlur = 3;
-    hctx.fillText('5', cx, h * 0.575);
-
-    // DECEMBER 2026
-    hctx.font = `600 ${Math.round(25 * scale)}px Montserrat, sans-serif`;
-    hctx.fillStyle = '#6b5847';
-    hctx.shadowBlur = 0;
-    hctx.fillText('DECEMBER 2026', cx, h * 0.615);
-
-    // 11:00 AM – 3:00 PM
-    hctx.font = `italic 500 ${Math.round(23 * scale)}px Montserrat, sans-serif`;
-    hctx.fillStyle = '#6b5847';
-    hctx.fillText('11:00 AM – 3:00 PM', cx, h * 0.640);
-
-    // Divider
-    drawDoorDivider(hctx, cx, h * 0.665, 180 * scale);
-
-    // LIVE CONVENTION CENTER
-    hctx.font = `700 ${Math.round(25 * scale)}px Montserrat, sans-serif`;
-    hctx.fillStyle = '#5c1020';
-    hctx.fillText('LIVE CONVENTION CENTER', cx, h * 0.690);
-
-    // Kozhichana
-    hctx.font = `500 ${Math.round(23 * scale)}px Montserrat, sans-serif`;
-    hctx.fillStyle = '#6b5847';
-    hctx.fillText('Kozhichana', cx, h * 0.715);
-
-    // Divider
-    drawDoorDivider(hctx, cx, h * 0.738, 180 * scale);
-
-    // Quote
-    hctx.font = `italic 500 ${Math.round(24 * scale)}px 'Cormorant Garamond', serif`;
-    hctx.fillStyle = '#6b5847';
-    hctx.fillText('Together in faith, towards forever.', cx, h * 0.760);
-
-    heroData = hctx.getImageData(0, 0, w, h).data;
-    heroPrepared = true;
-  }
-
-  function drawDoorDivider(ctx, cx, y, halfW){
-    ctx.save();
-    ctx.strokeStyle = '#c6a15b';
-    ctx.fillStyle = '#c6a15b';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(cx - halfW, y);
-    ctx.lineTo(cx - 12, y);
-    ctx.moveTo(cx + 12, y);
-    ctx.lineTo(cx + halfW, y);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(cx, y, 3, 0, Math.PI * 2);
-    ctx.fill();
-    ctx.restore();
-  }
-
   let entered = false;
   function enterStory(){
-    videoStage.style.display = 'none';
-    opening.style.display = 'none';
     if(entered) return; entered = true;
     story.hidden = false;
     body.classList.remove('locked');
@@ -1128,93 +945,36 @@ const WEDDING_START = '2026-12-05T11:00:00+05:30';
     initLetters();
     initFlipCard();
     requestAnimationFrame(function(){ requestAnimationFrame(sizeCanvas); });
-  }
-
-  function renderDoorFrame(){
-    if(!opened || entered) return;
-    if(video.paused || video.ended){
-      if(video.ended) enterStory();
-      return;
-    }
-
-    if(video.currentTime > 2.8){
-      enterStory();
-      return;
-    }
-
-    const vw = video.videoWidth || 720;
-    const vh = video.videoHeight || 1280;
-    if(doorCanvas.width !== vw || doorCanvas.height !== vh){
-      doorCanvas.width = vw;
-      doorCanvas.height = vh;
-      prepareHeroCanvas(vw, vh);
-    }
-    if(!heroPrepared) prepareHeroCanvas(vw, vh);
-
-    const w = doorCanvas.width;
-    const h = doorCanvas.height;
-
-    doorCtx.drawImage(video, 0, 0, w, h);
-
-    if(heroData){
-      const frame = doorCtx.getImageData(0, 0, w, h);
-      const data = frame.data;
-      const hData = heroData;
-
-      const xMin = Math.floor(w * 0.18);
-      const xMax = Math.floor(w * 0.82);
-      const yMin = Math.floor(h * 0.32);
-      const yMax = Math.floor(h * 0.80);
-
-      for(let y = yMin; y < yMax; y++){
-        const rowOffset = y * w * 4;
-        for(let x = xMin; x < xMax; x++){
-          const idx = rowOffset + (x * 4);
-          const r = data[idx];
-          const g = data[idx + 1];
-          const b = data[idx + 2];
-          const bri = (r * 2 + g * 3 + b) / 6;
-
-          if(bri > 150){
-            data[idx] = hData[idx];
-            data[idx + 1] = hData[idx + 1];
-            data[idx + 2] = hData[idx + 2];
-          } else if(bri > 120){
-            const f = (bri - 120) / 30;
-            data[idx] = Math.round(data[idx] * (1 - f) + hData[idx] * f);
-            data[idx + 1] = Math.round(data[idx + 1] * (1 - f) + hData[idx + 1] * f);
-            data[idx + 2] = Math.round(data[idx + 2] * (1 - f) + hData[idx + 2] * f);
-          }
-        }
-      }
-      doorCtx.putImageData(frame, 0, 0);
-    }
-
-    requestAnimationFrame(renderDoorFrame);
+    videoStage.style.opacity = '0';
+    setTimeout(function(){
+      videoStage.style.display = 'none';
+      opening.style.display = 'none';
+    }, 400);
   }
 
   let opened = false;
   openBtn.addEventListener('click', function(){
     if(opened) return; opened = true;
     opening.style.display = 'none';
+    videoStage.style.opacity = '1';
     videoStage.style.display = 'block';
     video.currentTime = 0;
     playSong();
-
     if(video.error){ enterStory(); return; }
     const p = video.play();
     if(p && p.catch){ p.catch(function(){ enterStory(); }); }
-    requestAnimationFrame(renderDoorFrame);
   });
 
   video.addEventListener('ended', enterStory);
   video.addEventListener('error', function(){ if(opened) enterStory(); });
-  if(doorCanvas) doorCanvas.addEventListener('click', enterStory);
+  video.addEventListener('click', enterStory);
 
   /* ---------- map link ---------- */
   (function(){
     const mapBtn = document.getElementById('mapBtn');
     if(mapBtn && /^https?:\/\//i.test(NEW_GOOGLE_MAPS_URL_HERE)){ mapBtn.href = NEW_GOOGLE_MAPS_URL_HERE; }
+    const mapBtn2 = document.getElementById('mapBtn2');
+    if(mapBtn2 && typeof NEW_GOOGLE_MAPS_URL_HERE_2 !== 'undefined' && /^https?:\/\//i.test(NEW_GOOGLE_MAPS_URL_HERE_2)){ mapBtn2.href = NEW_GOOGLE_MAPS_URL_HERE_2; }
   })();
 
   /* ---------- couple photo (optional) ---------- */
@@ -1409,84 +1169,7 @@ const WEDDING_START = '2026-12-05T11:00:00+05:30';
   canvas.addEventListener('touchmove', move, {passive:false});
   canvas.addEventListener('touchend', end);
 
-  /* ---------- balloons ---------- */
-  const field = document.getElementById('balloonField');
-  const palette = ['#5c1220', '#c6a15b', '#efe4cc', '#4a2c17'];
-  let audioCtx;
-  function pop(){
-    try{
-      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-      const o = audioCtx.createOscillator();
-      const g = audioCtx.createGain();
-      o.type='sine'; o.frequency.setValueAtTime(520, audioCtx.currentTime);
-      o.frequency.exponentialRampToValueAtTime(120, audioCtx.currentTime + .14);
-      g.gain.setValueAtTime(.16, audioCtx.currentTime);
-      g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + .16);
-      o.connect(g); g.connect(audioCtx.destination);
-      o.start(); o.stop(audioCtx.currentTime + .17);
-    }catch(e){}
-  }
-  function spawnBalloon(){
-    if(!field.isConnected) return;
-    const b = document.createElement('div');
-    b.className = 'balloon';
-    const color = palette[Math.floor(Math.random()*palette.length)];
-    const left = 8 + Math.random()*76;
-    const dur = 9 + Math.random()*5;
-    b.style.left = left + '%';
-    b.style.animationDuration = dur + 's';
-    b.innerHTML = '<div class="string"></div><div class="body" style="background:radial-gradient(circle at 32% 28%, rgba(255,255,255,.55), '+color+' 55%, '+shade(color)+' 100%);"></div>';
-    field.appendChild(b);
-    const timer = setTimeout(function(){ if(b.isConnected) b.remove(); }, dur*1000);
-    b.addEventListener('click', function(){
-      clearTimeout(timer);
-      burst(b);
-      pop();
-      b.remove();
-    });
-  }
-  function shade(hex){
-    const n = parseInt(hex.slice(1),16);
-    let r=(n>>16)-40, g=((n>>8)&255)-40, bl=(n&255)-40;
-    r=Math.max(0,r); g=Math.max(0,g); bl=Math.max(0,bl);
-    return 'rgb('+r+','+g+','+bl+')';
-  }
-  function burst(b){
-    const rect = b.getBoundingClientRect();
-    const fieldRect = field.getBoundingClientRect();
-    const cx = rect.left - fieldRect.left + rect.width/2;
-    const cy = rect.top - fieldRect.top + rect.height/2;
-    for(let i=0;i<10;i++){
-      const p = document.createElement('div');
-      p.className = 'burst';
-      const size = 4 + Math.random()*4;
-      p.style.width = size+'px'; p.style.height = size+'px';
-      p.style.left = cx+'px'; p.style.top = cy+'px';
-      p.style.background = palette[Math.floor(Math.random()*palette.length)];
-      const angle = Math.random()*Math.PI*2;
-      const dist = 24 + Math.random()*34;
-      p.style.transition = 'transform .6s ease-out, opacity .6s ease-out';
-      field.appendChild(p);
-      requestAnimationFrame(function(){
-        p.style.transform = 'translate('+(Math.cos(angle)*dist)+'px,'+(Math.sin(angle)*dist)+'px)';
-        p.style.opacity = '0';
-      });
-      setTimeout(function(){ p.remove(); }, 650);
-    }
-  }
-  let balloonInterval;
-  const balloonSection = field.closest('section');
-  const bIo = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        for(let i=0;i<5;i++){ setTimeout(spawnBalloon, i*500); }
-        balloonInterval = setInterval(spawnBalloon, 1800);
-      } else {
-        clearInterval(balloonInterval);
-      }
-    });
-  }, {threshold:.3});
-  bIo.observe(balloonSection);
+
 
 })();
 </script>
